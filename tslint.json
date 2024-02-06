@@ -1,7 +1,6 @@
 {
-    "rules": {
-      "no-console": true,
-      "no-debugger": true
-    }
+  "rules": {
+    "no-console": true,
+    "no-debugger": true
+  }
 }
-  
