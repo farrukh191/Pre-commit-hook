@@ -20,7 +20,7 @@ const Home = () => {
 
   const [lastClickedIndex, setLastClickedIndex] = useState(null);
   console.log('lastClickedIndex');
-  console.log('lastClickedIndex');
+  console.log('hello world');
   debugger
 
   const handleButtonClick = (index) => {
