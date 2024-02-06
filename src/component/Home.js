@@ -20,6 +20,7 @@ const Home = () => {
 
   const [lastClickedIndex, setLastClickedIndex] = useState(null);
   console.log('lastClickedIndex');
+  debugger
 
   const handleButtonClick = (index) => {
     setBoxes((prevBoxes) => {
