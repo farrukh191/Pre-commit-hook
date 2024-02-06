@@ -4,9 +4,9 @@ import '../App.css'
 const Box = ({ status, onClick }) => {
   return (
     <div className={status} style={{ margin: '10px', padding: '10px', border: '1px solid black', textAlign: 'center' }}>
-<div>Status: {status}</div>
-                                      <button onClick={onClick}>Change Status</button>
-                      </div>
+      <div>Status: {status}</div>
+      <button onClick={onClick}>Change Status</button>
+    </div>
   );
 };
 
