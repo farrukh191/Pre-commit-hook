@@ -45,10 +45,13 @@
     "lint-staged": "^15.2.2"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "git add"
-    ]
+    "concurrent": false,
+    "linters": {
+      "src/**/*.{js,jsx}": [
+        "prettier --write",
+        "eslint --fix",
+        "git add"
+  ]}
   },
   "husky": {
     "hooks": {
