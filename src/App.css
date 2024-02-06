@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+.pending{
+  background-color: aqua;
+}
+.yellow{
+  background-color: yellow;
+}
+.green{
+  background-color: green;
+}

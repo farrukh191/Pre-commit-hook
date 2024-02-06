@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import '../App.css'
 
 const Box = ({ status, onClick }) => {
   return (
-    <div style={{ margin: '10px', padding: '10px', border: '1px solid black', textAlign: 'center' }}>
+    <div className={status} style={{ margin: '10px', padding: '10px', border: '1px solid black', textAlign: 'center' }}>
       <div>Status: {status}</div>
       <button onClick={onClick}>Change Status</button>
     </div>
@@ -18,6 +19,7 @@ const Home = () => {
   ]);
 
   const [lastClickedIndex, setLastClickedIndex] = useState(null);
+  console.log('lastClickedIndex');
 
   const handleButtonClick = (index) => {
     setBoxes((prevBoxes) => {
