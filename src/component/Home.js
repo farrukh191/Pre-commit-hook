@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../App.css";
 
 const Box = ({ status, onClick }) => {
+  console.log("");
   return (
     <div
       className={status}
