@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../App.css";
 
 const Box = ({ status, onClick }) => {
@@ -27,9 +27,8 @@ const Home = () => {
   ]);
 
   const [lastClickedIndex, setLastClickedIndex] = useState(null);
-  console.log("lastClickedIndex");
-  console.log("hello world");
-  debugger;
+  // console.log("lastClickedIndex", lastClickedIndex);
+  // console.log("hello world");
 
   const handleButtonClick = (index) => {
     setBoxes((prevBoxes) => {
@@ -41,9 +40,20 @@ const Home = () => {
       return newBoxes;
     });
   };
+  let a;
+  let b;
+
+  // useEffect(() => {
+  //   console.log("a+b => ", a + b);
+  // }, []);
+  // const [count, setCount] = useState(0);
+  // useEffect(() => {
+  //   console.log(`You clicked ${count} times`);
+  // }, []);
 
   return (
     <div>
+      {lastClickedIndex}
       {boxes.map((box, index) => (
         <Box
           key={index}
