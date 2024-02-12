@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../App.css";
 
 const Box = ({ status, onClick }) => {
@@ -40,11 +40,7 @@ const Home = () => {
       return newBoxes;
     });
   };
-  let a;
-  let b;
-  console.log("This is a test log."); // Add this line for example
-  console.log("This is a test log.");
-  const unusedVariable = "Unused"; // Add this line for example
+
   return (
     <div>
       {lastClickedIndex}
