@@ -42,15 +42,8 @@ const Home = () => {
   };
   let a;
   let b;
-
-  // useEffect(() => {
-  //   console.log("a+b => ", a + b);
-  // }, []);
-  // const [count, setCount] = useState(0);
-  // useEffect(() => {
-  //   console.log(`You clicked ${count} times`);
-  // }, []);
-  console.log("remaining error");
+  console.log("This is a test log."); // Add this line for example
+  const unusedVariable = "Unused"; // Add this line for example
   return (
     <div>
       {lastClickedIndex}
