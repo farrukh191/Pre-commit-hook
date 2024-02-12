@@ -50,7 +50,7 @@ const Home = () => {
   // useEffect(() => {
   //   console.log(`You clicked ${count} times`);
   // }, []);
-
+  console.log("remaining error");
   return (
     <div>
       {lastClickedIndex}
