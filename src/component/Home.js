@@ -43,6 +43,7 @@ const Home = () => {
   let a;
   let b;
   console.log("This is a test log."); // Add this line for example
+  console.log("This is a test log.");
   const unusedVariable = "Unused"; // Add this line for example
   return (
     <div>
